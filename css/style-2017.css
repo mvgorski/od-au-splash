@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Karbon Bold";
+  src: url("../fonts/Karbon-Bold.otf");
+  font-weight: normal; }
+@font-face {
+  font-family: "Karbon Semibold";
+  src: url("../fonts/Karbon-Semibold.otf");
+  font-weight: normal; }
+@font-face {
+  font-family: "Karbon Regular";
+  src: url("../fonts/Karbon-Regular.otf");
+  font-weight: normal; }
+@font-face {
+  font-family: "Karbon Medium";
+  src: url("../fonts/Karbon-Medium.otf");
+  font-weight: normal; }
+@font-face {
+  font-family: "Karbon Thin";
+  src: url("../fonts/Karbon-Thin.otf");
+  font-weight: normal; }
+h1 {
+  font-family: "Karbon Bold", Helvetica, Arial, sans-serif; }
+
+h2, h3 {
+  font-family: "Karbon Semibold", Helvetica, Arial, sans-serif; }
+
+h4 {
+  font-family: "Karbon Medium", Helvetica, Arial, sans-serif; }
+
+strong {
+  font-family: "Karbon Semibold", Helvetica, Arial, sans-serif; }
+
+html, body, p, a, li {
+  font-family: "Karbon Medium", Helvetica, Arial, sans-serif; }
+
+.font-bold {
+  font-family: "Karbon Bold", Helvetica, Arial, sans-serif !important; }
+.font-semibold {
+  font-family: "Karbon Semibold", Helvetica, Arial, sans-serif !important; }
+.font-medium {
+  font-family: "Karbon Medium", Helvetica, Arial, sans-serif !important; }
+.font-light {
+  font-family: "Karbon Thin", Helvetica, Arial, sans-serif !important; }
+
+a {
+  -o-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  color: #006496; }
+  a:visited {
+    color: #004263; }
+  a:hover {
+    color: #004263; }
+  a:focus {
+    color: #004263; }
+
+* {
+  box-sizing: border-box; }
+
+/* mobile */
+html {
+  background: url(../img/bg-m-2017-02.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@media screen and (min-width: 992px) {
+  /* desktop*/
+  html {
+    background: url(../img/bg-2017-01.jpg) no-repeat top left fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+body {
+  background-color: transparent; }
+
+#desktop {
+  padding-top: 30px; }
+
+#desktop img.sponsor-default {
+  width: 300px; }
+
+#desktop img.sponsor-mo {
+  padding-top: 15px; }
+
+.nav a.header {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Karbon Bold", Helvetica, Arial, sans-serif;
+  color: #006496;
+  font-size: 50px;
+  line-height: .7; }
+
+.nav a.year {
+  display: inline-block;
+  font-family: "Karbon Thin", Helvetica, Arial, sans-serif;
+  color: #e17f25;
+  font-size: 30px; }
+
+.nav a:hover, .nav a:focus {
+  color: #e17f25;
+  font-family: "Karbon Bold", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  -o-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.nav span {
+  display: inline-block;
+  font-family: "Karbon Thin", Helvetica, Arial, sans-serif;
+  color: #e17f25;
+  font-size: 20px;
+  margin: 0 5px 0 8px; }
+
+#desktop .nav div:hover {
+  cursor: pointer; }
+
+footer p {
+  /*font-family: $font-light;*/
+  color: #fff; }
+
+@media screen and (max-width: 1510px) {
+  .nav a.header {
+    /*font-size: 40px;*/ } }
+@media screen and (max-width: 1220px) {
+  .nav a.header {
+    /*font-size: 30px;*/ } }
+#mobile {
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 30px; }
+
+#mobile img.logo {
+  margin-top: 15px;
+  margin-bottom: 40%;
+  padding: 0 20px; }
+
+#mobile .panel-title a {
+  color: #e17f25;
+  font-size: 2.4em;
+  text-decoration: none; }
+
+#mobile .panel:first-child .panel-title a {
+  color: #006496; }
+
+#mobile .panel:first-child .panel-body {
+  background: rgba(0, 100, 150, 0.8); }
+
+#mobile .panel-body {
+  color: #fff;
+  font-family: "Karbon Thin", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  background: rgba(225, 127, 37, 0.8); }
+
+/* Bootstrap Accordion overrides */
+#mobile .panel-body a {
+  font-family: "Karbon Semibold", Helvetica, Arial, sans-serif;
+  padding-right: 0;
+  padding-left: 15px;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 1px; }
+
+#mobile .panel-body a:first-child {
+  border-right: 2px solid #fff;
+  padding-left: 0;
+  padding-right: 25px; }
+
+.panel-group .panel {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.36);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.36); }
+
+.panel-group .panel:last-child {
+  border-bottom: 0; }
+
+.panel-default > .panel-heading {
+  background-color: #fff;
+  border: 0; }
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: 0; }
+
+.panel-group .panel + .panel {
+  margin-top: 30px; }
+
+/*# sourceMappingURL=style-2017.css.map */

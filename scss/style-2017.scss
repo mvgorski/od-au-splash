@@ -1,0 +1,192 @@
+@import 'variables';
+@import 'mixins';
+
+@include font-face('Karbon Bold', 'Karbon-Bold');
+@include font-face('Karbon Semibold', 'Karbon-Semibold');
+@include font-face('Karbon Regular', 'Karbon-Regular');
+@include font-face('Karbon Medium', 'Karbon-Medium');
+@include font-face('Karbon Thin', 'Karbon-Thin');
+
+h1 {
+	font-family: $font-bold;
+}
+h2, h3 {
+	font-family: $font-semibold;
+}
+h4 {
+	font-family: $font-medium;
+}
+strong {
+	font-family: $font-semibold;
+}
+html, body, p, a, li {
+	font-family: $font-medium;
+}
+.font {
+	&-bold {font-family: $font-bold !important;}
+	&-semibold {font-family: $font-semibold !important;}
+	&-medium {font-family: $font-medium !important;}
+	&-light {font-family: $font-light !important;}
+}
+a {
+	@include chameleon;
+	color: $blue;
+	&:visited {
+    color: $blue-dark;
+  	}
+ 	 &:hover {
+	color: darken($blue, 10%);
+  	}
+  	&:focus {
+	color: darken($blue, 10%);
+  	}
+}
+* { box-sizing: border-box; }
+
+
+/* mobile */
+html { 
+  background: url(../img/bg-m-2017-02.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media screen and (min-width: 992px) {
+	/* desktop*/
+	html { 
+	  background: url(../img/bg-2017-01.jpg) no-repeat top left fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+}
+
+body {
+	background-color: transparent;
+}
+
+
+#desktop {
+  padding-top: 30px;
+}
+#desktop img.sponsor-default {
+  width: 300px;
+}
+#desktop img.sponsor-mo {
+  padding-top: 15px;
+}
+.nav a.header {
+   display: block;
+   text-transform: uppercase;
+   font-family: $font-bold;
+   color: $blue;
+   font-size: 50px;
+   line-height: .7;
+}
+.nav a.year {
+  display: inline-block;
+  font-family: $font-light;
+  color: $orange;
+  font-size: 30px;
+}
+.nav a:hover,.nav a:focus {
+  color: $orange;
+  font-family: $font-bold;
+  text-decoration: none;
+  @include chameleon;
+}
+.nav span {
+  display: inline-block;
+  font-family: $font-light;
+  color: $orange;
+  font-size: 20px;
+  margin: 0 5px 0 8px;
+}
+#desktop .nav div:hover {
+  cursor: pointer;
+}
+footer p {
+  /*font-family: $font-light;*/
+  color: $white;
+}
+@media screen and (max-width: 1510px)  {
+  .nav a.header {
+    /*font-size: 40px;*/
+  }
+}
+@media screen and (max-width: 1220px)  {
+  .nav a.header {
+    /*font-size: 30px;*/
+  }
+}
+
+#mobile {
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+#mobile img.logo {
+  margin-top: 15px;
+  margin-bottom: 40%;
+  padding: 0 20px;
+}
+#mobile .panel-title a {
+  color: $orange;
+  font-size: 2.4em;
+  text-decoration: none;
+}
+#mobile .panel:first-child .panel-title a {
+	color: $blue;
+}
+#mobile .panel:first-child .panel-body {
+  	background: rgba($blue, .8); 
+}
+#mobile .panel-body {
+	color: $white;
+	font-family: $font-light;
+  	font-size: 2em;
+  	background: rgba($orange, .8);
+}
+
+/* Bootstrap Accordion overrides */
+
+#mobile .panel-body a {
+  font-family: $font-semibold;
+  padding-right:0;
+  padding-left: 15px;
+  color: $white;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+#mobile .panel-body a:first-child {
+  border-right: 2px solid $white;
+  padding-left:0;
+  padding-right: 25px;
+}
+.panel-group .panel {
+  	border:0;
+	background: transparent;
+	-webkit-box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.36);
+	box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.36);
+}
+.panel-group .panel:last-child {
+  	border-bottom:0;
+}
+.panel-default>.panel-heading {
+  	background-color: $white;
+  	border:0;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  	border:0;
+}
+.panel-group .panel+.panel {
+	margin-top: 30px;
+}
+
+
+
+
+
+

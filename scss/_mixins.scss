@@ -1,0 +1,25 @@
+// web fonts
+
+@mixin font-face($family, $file){
+	@font-face {
+		font-family: $family;
+		src: url('#{$path-font}/#{$file}.otf');
+		font-weight: normal;
+	}
+}
+
+@mixin chameleon {
+	-o-transition:.3s ease-in-out;
+	-ms-transition:.3s ease-in-out;
+	-moz-transition:.3s ease-in-out;
+	-webkit-transition:.3s ease-in-out;
+	transition:.3s ease-in-out;
+}
+
+@mixin transition($duration) {
+	-o-transition:$duration ease-in-out;
+	-ms-transition:$duration ease-in-out;
+	-moz-transition:$duration ease-in-out;
+	-webkit-transition:$duration ease-in-out;
+	transition:$duration ease-in-out;
+}

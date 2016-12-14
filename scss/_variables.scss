@@ -1,0 +1,20 @@
+// Color Variables
+
+$white	: #fff;
+$black 	: #000;
+$grey	: #878787;
+$orange	: #e17f25;
+$blue	: #006496;
+$blue-dark : darken($blue, 10%);
+
+// assets paths
+
+$path-font	: '../fonts';
+
+// Font Stack
+
+$sans-serif		: Helvetica, Arial, sans-serif;
+$font-bold		: 'Karbon Bold', $sans-serif;
+$font-semibold	: 'Karbon Semibold', $sans-serif;
+$font-medium	: 'Karbon Medium', $sans-serif;
+$font-light		: 'Karbon Thin', $sans-serif;
