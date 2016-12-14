@@ -53,11 +53,9 @@
 <div id="desktop" class="container-fluid hidden-sm hidden-xs">
    <div class="row">
       <div class="col-sm-4 logos">
-        <img class="sponsor-default img-responsive center-block" src="assets2017/img/splash/default-hover.png" alt="The Ride to Concquer Cancer">
-        <img class="sponsor-ab img-responsive center-block" src="assets2017/img/splash/alberta-hover.png" alt="Alberta Cancer Foundation" title="Alberta Cancer Foundation">
-        <img class="sponsor-va img-responsive center-block" src="assets2017/img/splash/vancouver-hover.png" alt="BC Cancer Foundation" title="BC Cancer Foundation">
-        <img class="sponsor-to img-responsive center-block" src="assets2017/img/splash/toronto-hover.png" alt="Princess Margaret Cancer Centre" alt="Princess Margaret Cancer Centre">
-        <img class="sponsor-mo img-responsive center-block" src="assets2017/img/splash/montreal-hover.png" alt="Jewish General Hospital" title="Jewish General Hospital">
+        <img class="sponsor-default img-responsive center-block" src="http://placehold.it/600x300" alt="OneDay to Conquer Cancer">
+        <img class="sponsor-br img-responsive center-block" src="http://placehold.it/600x300" alt="OneDay to Conquer Cancer" title="Alberta Cancer Foundation">
+        <img class="sponsor-ml img-responsive center-block" src="http://placehold.it/600x300" alt="OneDay to Conquer Cancer" title="BC Cancer Foundation">
       </div>
       <div class="col-sm-8 nav">
         <div id="brisbane" class="main-head col-sm-6 text-center">
@@ -143,55 +141,20 @@
 <script>
 
   // hide sponsor images initially besides generic
-  $(".sponsor-ab, .sponsor-va, .sponsor-mo, .sponsor-to, .copyright-ab, .copyright-va, .copyright-to, .copyright-mo").hide();
+  $(".sponsor-br, .sponsor-ml, .copyright-br, .copyright-ml").hide();
 
-  $("#alberta").mouseover(function(){
+  $("#brisbane").mouseover(function(){
     $(".sponsor-default").hide();
-    $(".sponsor-to").hide();
-    $(".sponsor-mo").hide();
-    $(".sponsor-va").hide();
-    $(".sponsor-ab").show();
+    $(".sponsor-ml").hide();
     $(".copyright-default").hide();
-    $(".copyright-to").hide();
-    $(".copyright-mo").hide();
-    $(".copyright-va").hide();
-    $(".copyright-ab").show();
+    $(".copyright-ml").hide();
   });
-  $("#vancouver").mouseover(function(){
+  $("#melbourne").mouseover(function(){
     $(".sponsor-default").hide();
-    $(".sponsor-to").hide();
-    $(".sponsor-mo").hide();
-    $(".sponsor-ab").hide();
-    $(".sponsor-va").show();
+    $(".sponsor-br").hide();
     $(".copyright-default").hide();
-    $(".copyright-to").hide();
-    $(".copyright-mo").hide();
-    $(".copyright-ab").hide();
-    $(".copyright-va").show();
-  });
-  $("#toronto").mouseover(function(){
-    $(".sponsor-default").hide();
-    $(".sponsor-ab").hide();
-    $(".sponsor-mo").hide();
-    $(".sponsor-va").hide();
-    $(".sponsor-to").show();
-    $(".copyright-default").hide();
-    $(".copyright-ab").hide();
-    $(".copyright-mo").hide();
-    $(".copyright-va").hide();
-    $(".copyright-to").show();
-  });
-  $("#montreal").mouseover(function(){
-    $(".sponsor-default").hide();
-    $(".sponsor-to").hide();
-    $(".sponsor-ab").hide();
-    $(".sponsor-va").hide();
-    $(".sponsor-mo").show();
-    $(".copyright-default").hide();
-    $(".copyright-to").hide();
-    $(".copyright-ab").hide();
-    $(".copyright-va").hide();
-    $(".copyright-mo").show();
+    $(".copyright-br").hide();
+
   });
 
 </script>
