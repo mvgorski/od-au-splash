@@ -78,14 +78,25 @@ html {
 body {
   background-color: transparent; }
 
-#desktop {
-  padding-top: 50px; }
+.logos img {
+  max-width: 400px;
+  width: 100%;
+  margin-left: 30px; }
 
-#desktop img.sponsor-default {
-  width: 300px; }
+img.sponsor-ml {
+  max-width: 375px; }
 
-#desktop img.sponsor-mo {
-  padding-top: 15px; }
+@media screen and (max-width: 1450px) {
+  .logos img {
+    margin-left: auto; } }
+.nav {
+  padding-top: 75px; }
+
+.logos {
+  padding-top: 30px; }
+
+.nav {
+  padding-left: 15px; }
 
 .nav a.header {
   display: block;
@@ -128,9 +139,15 @@ footer p {
 @media screen and (max-width: 1510px) {
   .nav a.header {
     /*font-size: 40px;*/ } }
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1200px) {
   .nav a.header {
-    /*font-size: 30px;*/ } }
+    font-size: 40px; }
+
+  .nav {
+    padding-top: 50px; }
+
+  .logos {
+    padding-top: 15px; } }
 #mobile {
   color: #fff;
   min-height: 100vh;
@@ -139,7 +156,9 @@ footer p {
 #mobile img.logo {
   margin-top: 15px;
   margin-bottom: 40%;
-  padding: 0 20px; }
+  padding: 0 20px;
+  max-width: 400px;
+  width: 100%; }
 
 #mobile .panel-title a {
   color: #e17f25;
