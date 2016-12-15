@@ -3,42 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Ride to Conquer Cancer</title>
+  <title>OneDay to Conquer Cancer</title>
   <meta name="description" content="The Ride to Conquer Cancer® is a cycling journey, a fundraising crusade and your chance to BE EPIC.  When you join The Ride, you’re taking action, becoming part of a powerful tribe, and creating hope for countless individuals touched by cancer.">
   <meta name="author" content="CauseForce, LLC">
   <!-- FB -->
-  <meta property="og:url" content="http://www.conquercancer.ca" />
+  <meta property="og:url" content="http://www.conquercancer.org.au" />
   <meta property="og:title" content="The Ride to Conquer Cancer" />
   <meta property="og:description" content="The Ride to Conquer Cancer® is a cycling journey, a fundraising crusade and your chance to BE EPIC.  When you join The Ride, you’re taking action, becoming part of a powerful tribe, and creating hope for countless individuals touched by cancer." />
-  <meta property="og:image" content="http://www.conquercancer.ca/assets2017/img/splash/fb-ride-01.jpg" />
+  <meta property="og:image" content="http://www.conquercancer.org.au/assets2017/img/splash/fb-ride-01.jpg" />
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-2017.css">
 
 <style type="text/css">
-
-/*.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}*/
 
 
 </style>
@@ -50,28 +27,29 @@
 <body>
 
 <!-- Desktop Content -->
-<div id="desktop" class="container-fluid hidden-sm hidden-xs">
-   <div class="row">
-      <div class="col-md-4 logos">
-        <img class="sponsor-default img-responsive center-block" src="http://placehold.it/600x300" alt="OneDay to Conquer Cancer">
-        <img class="sponsor-br img-responsive center-block" src="http://placehold.it/600x300" alt="OneDay to Conquer Cancer" title="Alberta Cancer Foundation">
-        <img class="sponsor-ml img-responsive center-block" src="http://placehold.it/600x300" alt="OneDay to Conquer Cancer" title="BC Cancer Foundation">
-      </div>
-      <div class="col-md-8 nav">
-        <div id="brisbane" class="main-head col-md-6 col-lg-4 text-center">
-            <a href="#" class="header">Brisbane</a>
-            <a href="#" class="year">2016</a>
-            <span>|</span>
-            <a href="#" class="year">2017</a>
-        </div>
-        <div id="melbourne" class="main-head col-md-6 col-lg-4 text-center">
-          <a href="#" class="header">Melbourne</a>
-          <a href="#" class="year">2016</a>
+<header id="desktop" class="container-fluid hidden-sm hidden-xs">
+  <div class="row">
+    <div class="col-md-4 col-lg-4 logos">
+      <img class="sponsor-default img-responsive center-block" src="img/logo-gn.png" alt="OneDay to Conquer Cancer">
+      <img class="sponsor-br img-responsive center-block" src="img/logo-br.png" alt="OneDay to Conquer Cancer" title="Royal Brisbane Hospital">
+      <img class="sponsor-ml img-responsive center-block" src="img/logo-ml.png" alt="OneDay to Conquer Cancer" title="Peter MacCallum Cancer Centre">
+    </div>
+    <div class="col-md-8 col-lg-8 nav">
+      <div id="brisbane" class="main-head col-md-6 col-lg-4 text-center">
+          <a href="#" class="header">Brisbane</a>
+          <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br16_home" class="year">2016</a>
           <span>|</span>
-          <a href="#" class="year">2017</a>
-        </div>
+          <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br17_home" class="year">2017</a>
       </div>
-   </div>
+      <div id="melbourne" class="main-head col-md-5 col-lg-4 text-center">
+        <a href="#" class="header">Melbourne</a>
+        <a href="http://participate.theoneday.org.au/site/PageServer?pagename=ml16_home" class="year">2016</a>
+        <span>|</span>
+        <a href="http://participate.theoneday.org.au/site/PageServer?pagename=ml17_home" class="year">2017</a>
+      </div>
+    </div>
+  </div>
+</header>
    <footer class="navbar-fixed-bottom">
      <div class="container">
        <div class="row">
@@ -91,7 +69,7 @@
 <div id="mobile" class="container-fluid hidden-md hidden-lg">
   <div class="row header no-padding">
     <div class="col-xs-12">
-        <img src="http://placehold.it/600x200" alt="OneDay to Conquer Cancer" class="img-responsive center-block logo">
+        <img src="img/logo-gn.png" alt="OneDay to Conquer Cancer" class="img-responsive center-block logo">
     </div>
   </div>
   <div class="row">
@@ -144,12 +122,14 @@
   $(".sponsor-br, .sponsor-ml, .copyright-br, .copyright-ml").hide();
 
   $("#brisbane").mouseover(function(){
+    $(".sponsor-br").fadeIn();
     $(".sponsor-default").hide();
     $(".sponsor-ml").hide();
     $(".copyright-default").hide();
     $(".copyright-ml").hide();
   });
   $("#melbourne").mouseover(function(){
+    $(".sponsor-ml").fadeIn();
     $(".sponsor-default").hide();
     $(".sponsor-br").hide();
     $(".copyright-default").hide();
