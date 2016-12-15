@@ -23,3 +23,10 @@
 	-webkit-transition:$duration ease-in-out;
 	transition:$duration ease-in-out;
 }
+
+@mixin bg-cover {
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
