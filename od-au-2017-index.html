@@ -30,19 +30,19 @@
 <header id="desktop" class="container-fluid hidden-sm hidden-xs">
   <div class="row">
     <div class="col-md-4 col-lg-4 logos">
-      <img class="sponsor-default img-responsive center-block" src="img/logo-gn.png" alt="OneDay to Conquer Cancer">
-      <img class="sponsor-br img-responsive center-block" src="img/logo-br.png" alt="OneDay to Conquer Cancer" title="Royal Brisbane Hospital">
-      <img class="sponsor-ml img-responsive center-block" src="img/logo-ml.png" alt="OneDay to Conquer Cancer" title="Peter MacCallum Cancer Centre">
+      <img class="sponsor-default img-responsive center-block" src="img/logo-gn.svg" alt="OneDay to Conquer Cancer">
+      <img class="sponsor-br img-responsive center-block" src="img/logo-br.svg" alt="OneDay to Conquer Cancer" title="Royal Brisbane Hospital">
+      <img class="sponsor-ml img-responsive center-block" src="img/logo-ml.svg" alt="OneDay to Conquer Cancer" title="Peter MacCallum Cancer Centre">
     </div>
     <div class="col-md-8 col-lg-8 nav">
       <div id="brisbane" class="main-head col-md-6 col-lg-4 text-center">
-          <a href="#" class="header">Brisbane</a>
+          <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br17_home" class="header">Brisbane</a>
           <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br16_home" class="year">2016</a>
           <span>|</span>
           <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br17_home" class="year">2017</a>
       </div>
       <div id="melbourne" class="main-head col-md-5 col-lg-4 text-center">
-        <a href="#" class="header">Melbourne</a>
+        <a href="http://participate.theoneday.org.au/site/PageServer?pagename=ml17_home" class="header">Melbourne</a>
         <a href="http://participate.theoneday.org.au/site/PageServer?pagename=ml16_home" class="year">2016</a>
         <span>|</span>
         <a href="http://participate.theoneday.org.au/site/PageServer?pagename=ml17_home" class="year">2017</a>
@@ -54,11 +54,11 @@
      <div class="container">
        <div class="row">
          <div class="col-sm-12 copyright text-center">
-          <p class="copyright-default">&copy; 2017 CauseForce, LLC. OneDay to Conquer Cancer name and logo are registered.</p>
-          <!-- <p class="copyright-ab">&copy; 2016 CauseForce, LLC. The Ride to Conquer Cancer name and logo are registered trademarks of The Princess Margaret Cancer Foundation, used under license. Alberta Cancer Foundation is a trademark of the Alberta Cancer Foundation. Enbridge is a registered trademark of Enbridge, Inc., used under license.</p>
-          <p class="copyright-va">&copy; 2016 CauseForce, LLC. The Ride to Conquer Cancer name and logo are registered trademarks of The Princess Margaret Cancer Foundation, used under license. BC Cancer is a trademark of BC Cancer Foundation. Silver Wheaton is a registered trademark of Silver Wheaton Corp., used under license.</p>
-          <p class="copyright-to">&copy; 2016 CauseForce, LLC. The Ride to Conquer Cancer and Princess Margaret Cancer Centre names and logos are registered trademarks of The Princess Margaret Cancer Foundation, used under license. Enbridge is a registered trademark of Enbridge, Inc., used under license.</p>
-          <p class="copyright-mo">&copy; 2016 CauseForce, LLC. The Ride to Conquer Cancer name and logo are registered trademarks of The Princess Margaret Cancer Foundation, used under license. Jewish General Hospital is a trademark of the Sir Mortimer B. Davis Jewish General Hospital. Enbridge is a registered trademark of Enbridge, Inc., used under license.</p> -->
+          <!-- <p class="copyright-default">&copy; 2017 CauseForce, LLC. OneDay to Conquer Cancer name and logo are registered.</p> -->
+          <!-- <p class="copyright-br">&copy; 2016 CauseForce, LLC.</p>
+          <p class="copyright-ml">&copy; 2016 CauseForce, LLC.</p>
+          -->
+
          </div>
        </div>
      </div>
@@ -69,7 +69,7 @@
 <div id="mobile" class="container-fluid hidden-md hidden-lg">
   <div class="row header no-padding">
     <div class="col-xs-12">
-        <img src="img/logo-gn.png" alt="OneDay to Conquer Cancer" class="img-responsive center-block logo">
+        <img src="img/logo-gn.svg" alt="OneDay to Conquer Cancer" class="img-responsive center-block logo">
     </div>
   </div>
   <div class="row">
@@ -85,8 +85,8 @@
           </div>
           <div id="mobileCollapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-              <a href="#" target="_blank">2016</a>
-              <a href="#">2017</a>
+              <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br16_home" target="_blank">2016</a>
+              <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=br17_home">2017</a>
             </div>
           </div>
         </div>
@@ -99,8 +99,8 @@
           </div>
           <div id="mobileCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-              <a href="#" target="_blank">2016</a>
-              <a href="#">2017</a>
+              <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=ml16_home" target="_blank">2016</a>
+              <a href="http://participate.theoneday.org.au/site/PageServer/?pagename=ml17_home">2017</a>
             </div>
           </div>
         </div>
@@ -116,27 +116,7 @@
 <!--Bootstrap-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <!--script.js-->
-<script>
-
-  // hide sponsor images initially besides generic
-  $(".sponsor-br, .sponsor-ml, .copyright-br, .copyright-ml").hide();
-
-  $("#brisbane").mouseover(function(){
-    $(".sponsor-br").fadeIn();
-    $(".sponsor-default").hide();
-    $(".sponsor-ml").hide();
-    $(".copyright-default").hide();
-    $(".copyright-ml").hide();
-  });
-  $("#melbourne").mouseover(function(){
-    $(".sponsor-ml").fadeIn();
-    $(".sponsor-default").hide();
-    $(".sponsor-br").hide();
-    $(".copyright-default").hide();
-    $(".copyright-br").hide();
-
-  });
-
-</script>
+<script src="js/svgeezy.min.js"></script>
+<script src="js/script-2017.js"></script>
 </body>
 </html>

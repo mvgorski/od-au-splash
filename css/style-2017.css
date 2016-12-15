@@ -84,11 +84,14 @@ body {
   margin-left: 30px; }
 
 img.sponsor-ml {
-  max-width: 375px; }
+  max-width: 365px; }
 
 @media screen and (max-width: 1450px) {
   .logos img {
     margin-left: auto; } }
+@media screen and (max-width: 1500px) and (min-width: 992px) {
+  .logos img {
+    max-width: 350px; } }
 .nav {
   padding-top: 75px; }
 
