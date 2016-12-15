@@ -66,13 +66,29 @@ body {
 	background-color: transparent;
 }
 #desktop {
-  padding-top: 50px;
+  
 }
-#desktop img.sponsor-default {
-  width: 300px;
+.logos img {
+  max-width: 400px;
+  width: 100%;
+  margin-left: 30px;
 }
-#desktop img.sponsor-mo {
-  padding-top: 15px;
+img.sponsor-ml {
+	max-width: 375px;
+}
+@media screen and (max-width: 1450px) {
+	.logos img {
+		margin-left:auto;
+	}
+}
+.nav {
+	padding-top: 75px;
+}
+.logos {
+	padding-top: 30px;
+}
+.nav {
+	padding-left: 15px;
 }
 .nav a.header {
    display: block;
@@ -113,9 +129,15 @@ footer p {
     /*font-size: 40px;*/
   }
 }
-@media screen and (max-width: 1220px)  {
+@media screen and (max-width: 1200px)  {
   .nav a.header {
-    /*font-size: 30px;*/
+    font-size: 40px;
+  }
+  .nav {
+  	padding-top: 50px;
+  }
+  .logos {
+  	padding-top: 15px;
   }
 }
 
@@ -128,6 +150,8 @@ footer p {
   margin-top: 15px;
   margin-bottom: 40%;
   padding: 0 20px;
+  max-width: 400px;
+  width: 100%;
 }
 #mobile .panel-title a {
   color: $orange;
@@ -181,9 +205,5 @@ footer p {
 .panel-group .panel+.panel {
 	margin-top: 30px;
 }
-
-
-
-
 
 
