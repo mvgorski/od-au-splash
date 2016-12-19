@@ -25,40 +25,17 @@ $(document).ready(function() {
 
 svgeezy.init(false, 'png'); 
 
-// hide sponsor images initially besides generic
-  $(".sponsor-br, .sponsor-ml, .copyright-br, .copyright-ml").hide();
 
   $("#brisbane").mouseover(function(){
-    $(".sponsor-br").fadeIn();
+    $(".sponsor-br").fadeIn('fast');
     $(".sponsor-default").hide();
     $(".sponsor-ml").hide();
-    $(".copyright-default").hide();
-    $(".copyright-ml").hide();
   });
   $("#melbourne").mouseover(function(){
-    $(".sponsor-ml").fadeIn();
+    $(".sponsor-ml").fadeIn('fast');
     $(".sponsor-default").hide();
     $(".sponsor-br").hide();
-    $(".copyright-default").hide();
-    $(".copyright-br").hide();
-
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }); // ready

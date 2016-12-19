@@ -7,7 +7,6 @@
 @include font-face('Karbon Medium', 'Karbon-Medium');
 @include font-face('Karbon Thin', 'Karbon-Thin');
 
-
 html, body, p, a, li {
 	font-family: $font-medium;
 }
@@ -46,6 +45,10 @@ html {
 }
 body {
 	background-color: transparent;
+}
+/* hide sponsor images initially besides generic */
+.sponsor-br, .sponsor-ml, .copyright-br, .copyright-ml {
+  display: none;
 }
 .logos img {
   max-width: 400px;
@@ -134,6 +137,7 @@ footer p {
   color: $orange;
   font-size: 2.4em;
   text-decoration: none;
+  display: block;
 }
 
 /* Bootstrap Accordion overrides */
@@ -182,5 +186,3 @@ footer p {
 .panel-group .panel+.panel {
 	margin-top: 30px;
 }
-
-

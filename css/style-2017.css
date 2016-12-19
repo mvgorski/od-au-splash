@@ -66,6 +66,10 @@ html {
 body {
   background-color: transparent; }
 
+/* hide sponsor images initially besides generic */
+.sponsor-br, .sponsor-ml, .copyright-br, .copyright-ml {
+  display: none; }
+
 .logos img {
   max-width: 400px;
   width: 100%;
@@ -151,7 +155,8 @@ footer p {
 #mobile .panel-title a {
   color: #e17f25;
   font-size: 2.4em;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 /* Bootstrap Accordion overrides */
 #mobile .panel:first-child .panel-title a {
