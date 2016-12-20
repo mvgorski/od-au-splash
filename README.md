@@ -17,6 +17,7 @@ $("#brisbane").mouseover(function(){
 * `background-image` set on `<html>` and positioned `no-repeat top left fixed`
 * Using `.svg` for logos
 * Using SVGeezy.js to fallback to `.png` if browser does not support `.svg`
+* Currently a `<footer>` hidden in comments. The Australia team opted to forgo the copyright text this time around - usually this will change with hovering over the city's `<div>`
 
 ### Mobile
 * Using Boostrap Accordion for mobile menu
