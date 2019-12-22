@@ -1,5 +1,6 @@
 # 2017 One Day to Conquer Cancer Australia Splash Page
-## Bootstrap Full-Width Image Landing Page
+## Causeforce
+### Full-Width Image Landing Page
 ### Mobile Bootstrap Accordion
 #### jQuery logo fade-in on hover
 *Australia-wide Event Page*
